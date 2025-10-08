@@ -108,9 +108,14 @@ export default function Home() {
       <header className="border-b border-border bg-card scroll-animate opacity-0 translate-y-4 transition-all duration-700 ease-out">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-center">
-            <div className="text-2xl font-bold text-primary">
+            <a
+              href="https://easywrite.se"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors duration-200"
+            >
               <span className="text-3xl">✍️</span> Easywrite
-            </div>
+            </a>
           </div>
         </div>
       </header>
@@ -351,9 +356,14 @@ export default function Home() {
       <footer className="bg-muted/30 border-t border-border py-12 px-4 scroll-animate opacity-0 translate-y-4 transition-all duration-700 ease-out">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-8">
-            <div className="text-2xl font-bold text-primary mb-4">
+            <a
+              href="https://easywrite.se"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-2xl font-bold text-primary mb-4 hover:text-primary/90 transition-colors duration-200"
+            >
               <span className="text-3xl">✍️</span> Easywrite
-            </div>
+            </a>
             <p className="text-muted-foreground">
               Din partner för skrivutveckling och författarskap
             </p>

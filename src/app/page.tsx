@@ -75,9 +75,8 @@ export default function Home() {
       formspreeData.append('_subject', 'Ny anmälan till Årskurs 2026');
       formspreeData.append('_replyto', formData.email);
 
-      // Replace 'YOUR_FORM_ID' with actual Formspree form ID
-      // For now, we'll simulate success - you'll need to create a Formspree account
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      // Using Formspree for form handling
+      const response = await fetch('https://formspree.io/f/myzndddj', {
         method: 'POST',
         body: formspreeData,
         headers: {

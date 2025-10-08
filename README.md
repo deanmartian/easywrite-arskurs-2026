@@ -2,6 +2,8 @@
 
 En modern landningssida för Easywrite's skrivkurs "Årskurs 2026" - ett årsprogram för blivande författare som vill utveckla sin skrivkonst.
 
+> ✅ **Redo för produktion!** Formspree-formuläret är redan konfigurerat (ID: `f/myzndddj`) och redo att ta emot anmälningar.
+
 ## 📝 Projektbeskrivning
 
 Årskurs 2026 är ett årsprogram för blivande författare som kombinerar individuell handledning, inspirerande skrivuppgifter och en stark gemenskap med andra deltagare. Denna landningssida presenterar kursen och erbjuder en smidig anmälningsprocess genom Formspree-integration.
@@ -56,26 +58,20 @@ bun dev
 
 ## 📧 Formspree-integration
 
-För att aktivera kontaktformuläret behöver du konfigurera Formspree:
+✅ **Kontaktformuläret är redan konfigurerat och redo att använda!**
 
-### Steg 1: Skapa Formspree-konto
-1. Gå till [formspree.io](https://formspree.io)
-2. Skapa ett gratis konto
-3. Skapa ett nytt formulär för "Easywrite Årskurs 2026"
+Formuläret använder Formspree-ID: `f/myzndddj` och skickar alla anmälningar direkt till `post@easywrite.se`.
 
-### Steg 2: Konfigurera formuläret
-1. Kopiera din Formspree-formulär-ID från dashboarden
-2. Öppna `src/app/page.tsx`
-3. Hitta raden:
-```typescript
-const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-```
-4. Ersätt `YOUR_FORM_ID` med din riktiga formulär-ID
+### ✨ Vad som redan är konfigurerat:
+- **Form ID**: `f/myzndddj` är redan inställt i koden
+- **E-postmottagare**: Anmälningar skickas till `post@easywrite.se`
+- **Automatisk ämnesrad**: "Ny anmälan till Årskurs 2026"
+- **Spamskydd**: Inbyggt skydd mot spam och bots
 
-### Steg 3: Testa formuläret
-1. Spara filen och starta om utvecklingsservern
-2. Testa att skicka en anmälan
-3. Kontrollera att du får e-postnotifikationer i Formspree
+### 🚀 Hur du aktiverar formuläret:
+1. **Logga in på Formspree**: Gå till [formspree.io](https://formspree.io) med kontot som äger formulär `f/myzndddj`
+2. **Verifiera e-post**: Se till att `post@easywrite.se` är verifierad i Formspree
+3. **Testa formuläret**: Formuläret fungerar direkt när sidan är deployed!
 
 ### Formspree-konfiguration
 Formuläret är konfigurerat med följande fält:
@@ -122,7 +118,7 @@ Om du vill använda miljövariabler för Formspree:
 
 3. Uppdatera koden för att använda miljövariabeln:
 ```typescript
-const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || 'YOUR_FORM_ID';
+const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || 'myzndddj';
 const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
 ```
 

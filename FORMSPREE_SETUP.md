@@ -16,15 +16,8 @@
 - Kopiera formulär-ID:t (format: `f/XXXXXXXX`)
 - Exempel: `f/mzzzpjka`
 
-### 4. Uppdatera koden
-I filen `src/app/page.tsx`, på rad ~81, ersätt:
-```javascript
-const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-```
-med:
-```javascript
-const response = await fetch('https://formspree.io/f/DITT_FORM_ID', {
-```
+### 4. ✅ Formulär-ID är redan konfigurerat
+Form ID `f/myzndddj` är redan inställt i koden. Formuläret är redo att ta emot anmälningar!
 
 ### 5. Deploy till Vercel
 - Pusha koden till GitHub

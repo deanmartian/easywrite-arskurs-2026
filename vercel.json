@@ -1,0 +1,8 @@
+{
+  "buildCommand": "bun run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "images": {
+    "domains": ["source.unsplash.com", "images.unsplash.com", "ext.same-assets.com", "ugc.same-assets.com"]
+  }
+}

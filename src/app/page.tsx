@@ -175,10 +175,10 @@ export default function Home() {
               <CardContent className="p-8 text-center">
                 <div className="text-4xl mb-6">📚</div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  Skrivaruppgifter och kursmoduler online
+                  Skrivuppgifter och kursmoduler online
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Strukturerade skrivaruppgifter och kursmoduler som utmanar och
+                  Strukturerade skrivuppgifter och kursmoduler som utmanar och
                   inspirerar dig att utveckla olika genrer och tekniker.
                 </p>
               </CardContent>

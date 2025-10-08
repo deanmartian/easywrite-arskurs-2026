@@ -242,7 +242,7 @@ export default function Home() {
               <CardContent className="p-8">
                 <div className="text-4xl mb-6 text-center">✨</div>
                 <blockquote className="text-muted-foreground italic leading-relaxed mb-6">
-                  "Mitt skrivarhantverk har blivit mycket vassare. Cecilie har en skarp blick
+                  "Mitt skrivarhantverk har blivit mycket vassare. Cecilie Östby har en skarp blick
                   för brister och ger goda förslag."
                 </blockquote>
                 <div className="text-right">
